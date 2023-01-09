@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from './styles/global';
+
+import RotatingButton from './components/RotatingButton';
+import SwipeButton from './components/SwipeButton';
+import ButtonHoverEffect from './components/ButtonHoverEffect';
+import StretchingButton from './components/StretchingButton';
+import SwipeFromBottom from './components/SwipeFromBottom';
+import GlowingButton from './components/GlowingButton';
+import SwappingButton from './components/SwappingButton';
+import TextScalingButton from './components/TextScalingButton';
+import CircularSwapButton from './components/CircularSwapButton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <GlobalStyle />
+      <RotatingButton />
+      <SwipeButton />
+      <ButtonHoverEffect />
+      <StretchingButton />
+      <SwipeFromBottom />
+      <GlowingButton />
+      <SwappingButton />
+      <TextScalingButton />
+      <CircularSwapButton />
     </div>
   );
 }
